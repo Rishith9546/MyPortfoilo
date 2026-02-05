@@ -1,0 +1,82 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;box-sizing: border-box;
+
+}
+body{
+background: radial-gradient(circle at center, #0F172A, #020617 70%);
+color: rgb(219, 209, 209);
+font-family: "Open Sans", sans-serif;
+font-size: 18px;
+font-weight: 500;
+
+}
+/* Nav Bar */
+.header{
+  margin: 0 auto;
+  padding: 0px;
+  
+ max-width:680px;
+
+
+}
+
+.header ul{
+  background: rgba(2, 6, 23, 0.65);
+  backdrop-filter: blur(14px);
+
+  list-style: none;
+  display: flex;
+  align-items:center;    
+  justify-content: center;
+  gap: 20px;
+ 
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px;
+  white-space: nowrap;
+}
+
+.header ul li{
+  display: flex;
+}
+
+.header a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  height: 100%;            
+         
+  width: 101px;
+  height: 50px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+
+  transition: background-color 0.5s ease;
+}
+
+.header a:hover{
+  background-color: white;
+  color: #020617;
+}
+/* Dot */
+.header .pointer{
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+
+  height: 100%;      
+
+  font-size: 22px;
+  line-height: 10;      
+  color: #64748B;
+  pointer-events: none;
+}
+
+
+
+
