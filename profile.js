@@ -1,11 +1,18 @@
-const percentage=0;
+let  percentage=60;
+let increasing=true;
 
 setInterval(()=>{
-  if(percentage==100){
-    percentage=0;
-  }else{
     document.body.style.background=`radial-gradient(circle at center, #0F172A, #020617 ${percentage}%)`;
-
-  }
-  percentage=percentage+10;
-},1000);
+    if(increasing){
+        percentage+=1;
+        if(percentage >= 80){
+        increasing=false;
+        }
+    }
+    else {
+    percentage-=1;
+    if(percentage<=60){
+        increasing = true;
+    }
+    }
+},200);
