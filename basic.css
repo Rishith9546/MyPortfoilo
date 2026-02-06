@@ -121,11 +121,11 @@ font-weight: 500;
   transform: translateY(20px);
   animation: revealText 0.8s ease-out forwards;
 }
-.delay-0{animation-delay: 0.2s;}
-.delay-1 { animation-delay: 0.4s; }
-.delay-2 { animation-delay: 0.6s; }
-.delay-3 { animation-delay: 0.8s; }
-.delay-4 { animation-delay: 1s; }
+.delay-0{animation-delay: 0.4s;}
+.delay-1 { animation-delay: 0.8s; }
+.delay-2 { animation-delay: 1.2s; }
+.delay-3 { animation-delay: 1.4s; }
+.delay-4 { animation-delay: 1.8s; }
 
 @keyframes revealText {
   to {
@@ -134,6 +134,20 @@ font-weight: 500;
   }
 } 
 
+.cursor-glow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(13, 140, 199, 0.15), transparent 70%);
+  border-radius: 50%;
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+  filter: blur(40px);
+  z-index: 0;
+  transition: left 0.1s ease, top 0.1s ease; ;
+}
 
 
 
