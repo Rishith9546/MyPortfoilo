@@ -706,3 +706,55 @@ background-attachment: fixed;
     font-size: 22px;
   }
 }
+/* ===== SCROLL REVEAL FIX ===== */
+
+/* override your current animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(60px);
+  animation: none; /* ❌ stop auto animation */
+  transition: all 0.8s ease;
+}
+
+/* when visible */
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* project cards animation */
+.project_card {
+  opacity: 0;
+  transform: translateY(80px) scale(0.95);
+  transition: all 0.6s ease;
+}
+
+.project_card.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* skills animation */
+.skill {
+  opacity: 0;
+  transform: translateY(60px);
+  transition: all 0.5s ease;
+}
+
+.skill.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* stagger effect */
+.project_card:nth-child(1) { transition-delay: 0.1s; }
+.project_card:nth-child(2) { transition-delay: 0.2s; }
+.project_card:nth-child(3) { transition-delay: 0.3s; }
+.project_card:nth-child(4) { transition-delay: 0.4s; }
+
+.skill:nth-child(1) { transition-delay: 0.1s; }
+.skill:nth-child(2) { transition-delay: 0.2s; }
+.skill:nth-child(3) { transition-delay: 0.3s; }
+.skill:nth-child(4) { transition-delay: 0.4s; }
+.skill:nth-child(5) { transition-delay: 0.5s; }
+.skill:nth-child(6) { transition-delay: 0.6s; }

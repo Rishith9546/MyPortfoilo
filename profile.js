@@ -23,3 +23,24 @@ setInterval(()=>{
     glow.style.left = e.clientX + "px";
     glow.style.top = e.clientY + "px";
   });
+
+  const elements = document.querySelectorAll(
+  ".reveal, .project_card, .skill"
+);
+
+function revealOnScroll() {
+  const windowHeight = window.innerHeight;
+
+  elements.forEach((el) => {
+    const elementTop = el.getBoundingClientRect().top;
+
+    if (elementTop < windowHeight - 80) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+
+// run once on load
+revealOnScroll();
