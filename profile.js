@@ -23,4 +23,3 @@ setInterval(()=>{
     glow.style.left = e.clientX + "px";
     glow.style.top = e.clientY + "px";
   });
-
