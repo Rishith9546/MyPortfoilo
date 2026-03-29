@@ -16,31 +16,23 @@ setInterval(()=>{
     }
     }
 },200);
+// PROJECTS ONLY ANIMATION
 
-  const glow = document.querySelector(".cursor-glow");
+const projectCards = document.querySelectorAll(".project_card");
 
-  document.addEventListener("mousemove", (e) => {
-    glow.style.left = e.clientX + "px";
-    glow.style.top = e.clientY + "px";
-  });
-
-  const elements = document.querySelectorAll(
-  ".reveal, .project_card, .skill"
-);
-
-function revealOnScroll() {
+function animateProjectsOnScroll() {
   const windowHeight = window.innerHeight;
 
-  elements.forEach((el) => {
-    const elementTop = el.getBoundingClientRect().top;
+  projectCards.forEach((card) => {
+    const cardTop = card.getBoundingClientRect().top;
 
-    if (elementTop < windowHeight - 80) {
-      el.classList.add("active");
+    if (cardTop < windowHeight - 80) {
+      card.classList.add("active");
     }
   });
 }
 
-window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("scroll", animateProjectsOnScroll);
 
 // run once on load
-revealOnScroll();
+animateProjectsOnScroll();
