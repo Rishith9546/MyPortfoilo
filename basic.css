@@ -195,6 +195,50 @@ background-attachment: fixed;
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(0, 150, 255, 0.4);
 }
+/* 📱 TABLET */
+@media (max-width: 900px) {
+
+  .about_me {
+    padding: 60px 15px;
+  }
+
+  .about_me_heading {
+    font-size: 26px;
+  }
+
+  .about_card {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .about_card p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+/* 📱 MOBILE */
+@media (max-width: 600px) {
+
+  .about_me {
+    padding: 50px 10px;
+    gap: 25px;
+  }
+
+  .about_me_heading {
+    font-size: 22px;
+  }
+
+  .about_card {
+    max-width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .about_card p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
 
 /* Skills */
 /* SECTION */
