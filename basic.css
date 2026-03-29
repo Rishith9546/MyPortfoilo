@@ -321,3 +321,128 @@ background-attachment: fixed;
     grid-template-columns: repeat(2, 100px);
   }
 }
+
+/* Project */
+/* SECTION */
+.projects {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* CONTAINER */
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  gap: 40px;
+  justify-content: center;
+  margin-top: 40px;
+}
+/* CARD */
+.project_card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+/* TEXT */
+.project_card h3 {
+  margin-bottom: 10px;
+}
+
+.project_card p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* TECH */
+.project_card .tech {
+  font-weight: bold;
+  color: #4facfe;
+}
+/* LINKS */
+.project_links {
+  margin-top: 15px;
+}
+
+.project_links a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: white;
+  border: 1px solid #4facfe;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.project_links a:hover {
+  background: #4facfe;
+  color: black;
+}
+
+/* HOVER */
+.project_card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 30px rgba(0,150,255,0.5);
+}
+/* TABLET */
+@media (max-width: 900px) {
+  .project_container {
+    grid-template-columns: repeat(1, 80%);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .project_container {
+    grid-template-columns: 100%;
+  }
+}
+
+
+/* Contact */
+/* SECTION */
+.contact {
+  padding: 80px 20px;
+  text-align: center;
+  height: 100vh;
+}
+.contact h2{
+  margin-bottom: 20px;
+}
+/* FORM */
+.contact_form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* INPUTS */
+.contact_form input,
+.contact_form textarea {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+/* BUTTON */
+.contact_form button {
+  padding: 12px;
+  border: none;
+  background: #4facfe;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact_form button:hover {
+  background: #00c6ff;
+}
