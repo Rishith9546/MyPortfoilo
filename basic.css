@@ -11,7 +11,7 @@ color: rgb(224, 221, 221);
 font-family: "Open Sans", sans-serif;
 font-size: 18px;
 font-weight: 500;
-
+background-attachment: fixed; 
 }
 /* Nav Bar */
 .header{
@@ -84,7 +84,7 @@ font-weight: 500;
   flex-direction: column;
   row-gap: 30px;
   justify-content: center;
-  height:80vh;
+  height:100vh;
   align-items: center;
   text-align: center;
 }
@@ -119,14 +119,14 @@ font-weight: 500;
  .reveal {
   opacity: 0;
   transform: translateY(20px);
-  animation: revealText 0.8s ease-out forwards;
+   animation: revealText 0.8s ease-out forwards; 
 }
-.delay-0{animation-delay: 0.4s;}
+/* .delay-0{animation-delay: 0.4s;}
 .delay-1 { animation-delay: 0.8s; }
 .delay-2 { animation-delay: 1.2s; }
 .delay-3 { animation-delay: 1.4s; }
 .delay-4 { animation-delay: 1.8s; }
-
+ */
 @keyframes revealText {
   to {
     opacity: 1;
@@ -150,6 +150,66 @@ font-weight: 500;
 }
 
 
+/* About Me  */
 
+.about_me{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  justify-content: center;
+  height:70vh;
+  align-items: center;
+  text-align: center;
+}
+.about_me div p{
+  font-size: 13px;
+  line-height: 3;
+}
 
- 
+/* Skills */
+.Section_skills{
+   display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  justify-content: center;
+  height:80vh;
+  align-items: center;
+  text-align: center;
+}
+.Section_skills .skills {
+  display: grid;
+  grid-template-columns: repeat(4, 120px);
+  gap: 30px;
+  justify-content: center;
+}
+
+.Section_skills .skills .skill {
+  background: rgba(255, 255, 255, 0.1); /* glass effect */
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+.Section_skills .skills .skill i{
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+.Section_skills .skills .skill:nth-child(5) {
+  grid-column: 2;
+}
+
+.Section_skills .skills .skill:nth-child(6) {
+  grid-column: 3;
+}
+.Section_skills .skills .skill p {
+  font-size: 14px;
+  color: white;
+}
+
+.Section_skills .skills .skill:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 150, 255, 0.5);
+}
